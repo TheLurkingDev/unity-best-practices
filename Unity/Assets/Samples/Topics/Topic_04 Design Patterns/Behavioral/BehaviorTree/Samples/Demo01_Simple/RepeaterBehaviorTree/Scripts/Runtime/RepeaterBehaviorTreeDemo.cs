@@ -3,18 +3,17 @@ using UnityEngine;
 
 namespace RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePattern.Sample
 {
-	public class SequenceBehaviorTreeDemo : BaseDemo
+	public class RepeaterBehaviorTreeDemo : BaseDemo
 	{
 		//[Header("Demo")]
-
-		private SequenceBehaviorTree _behaviorTree;
+		private RepeaterBehaviorTree _behaviorTree;
 		
 		protected override void Start()
 		{
 			// Must call base
 			base.Start();
 			
-			_behaviorTree = new SequenceBehaviorTree();
+			_behaviorTree = new RepeaterBehaviorTree();
 			_behaviorTree.Initialize();
 
 		}

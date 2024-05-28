@@ -7,21 +7,21 @@ namespace RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePatter
 	{
 		//[Header("Demo")]
 
-		private ParallelBehaviorTree _parallelBehaviorTree;
+		private ParallelBehaviorTree _behaviorTree;
 		
 		protected override void Start()
 		{
 			// Must call base
 			base.Start();
 			
-			_parallelBehaviorTree = new ParallelBehaviorTree();
-			_parallelBehaviorTree.Initialize();
+			_behaviorTree = new ParallelBehaviorTree();
+			_behaviorTree.Initialize();
 
 		}
 
 		private void Update()
 		{
-			_parallelBehaviorTree.OnTick(Time.deltaTime);
+			_behaviorTree.OnTick(Time.deltaTime);
 		}
 	}
 }

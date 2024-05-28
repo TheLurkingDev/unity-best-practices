@@ -7,21 +7,21 @@ namespace RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePatter
 	{
 		//[Header("Demo")]
 
-		private CountUpWithBlackboardBehaviorTree _countUpWithBlackboardBehaviorTree;
+		private CountUpWithBlackboardBehaviorTree _behaviorTree;
 		
 		protected override void Start()
 		{
 			// Must call base
 			base.Start();
 			
-			_countUpWithBlackboardBehaviorTree = new CountUpWithBlackboardBehaviorTree();
-			_countUpWithBlackboardBehaviorTree.Initialize();
+			_behaviorTree = new CountUpWithBlackboardBehaviorTree();
+			_behaviorTree.Initialize();
 
 		}
 
 		private void Update()
 		{
-			_countUpWithBlackboardBehaviorTree.OnTick(Time.deltaTime);
+			_behaviorTree.OnTick(Time.deltaTime);
 		}
 	}
 }

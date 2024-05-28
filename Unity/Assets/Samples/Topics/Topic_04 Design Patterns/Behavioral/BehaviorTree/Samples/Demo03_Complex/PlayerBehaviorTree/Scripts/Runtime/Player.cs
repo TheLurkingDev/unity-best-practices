@@ -16,30 +16,30 @@ namespace RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePatter
         [SerializeField]
         private Transform[] _waypoints;
 
-        private PlayerBehaviorTree _playerBehaviorTree;
+        private PlayerBehaviorTree _behaviorTree;
 
         protected void Start()
         {
             
             //Create tree
-            _playerBehaviorTree = new PlayerBehaviorTree();
+            _behaviorTree = new PlayerBehaviorTree();
             
             //Populate blackboard data
-            _playerBehaviorTree.Blackboard.SetValue("MoveSpeed", MoveSpeed);
-            _playerBehaviorTree.Blackboard.SetValue("WaitDelayInSeconds", WaitDelayInSeconds);
-            _playerBehaviorTree.Blackboard.SetValue("MinimumFoodDistance", MinimumFoodDistance);
+            _behaviorTree.Blackboard.SetValue("MoveSpeed", MoveSpeed);
+            _behaviorTree.Blackboard.SetValue("WaitDelayInSeconds", WaitDelayInSeconds);
+            _behaviorTree.Blackboard.SetValue("MinimumFoodDistance", MinimumFoodDistance);
             
             //Populate local tree data
-            _playerBehaviorTree.Transform = transform;
-            _playerBehaviorTree.Waypoints = _waypoints;
+            _behaviorTree.Transform = transform;
+            _behaviorTree.Waypoints = _waypoints;
             
             //Init
-            _playerBehaviorTree.Initialize();
+            _behaviorTree.Initialize();
         }
 
         protected void Update()
         {
-            _playerBehaviorTree.OnTick(Time.deltaTime);
+            _behaviorTree.OnTick(Time.deltaTime);
         }
     }
 }

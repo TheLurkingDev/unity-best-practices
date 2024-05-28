@@ -1,4 +1,5 @@
 using RMC.BestPractices.Shared;
+using RMC.Core.DesignPatterns.BehavioralPatterns.BehaviorTreePattern;
 using UnityEngine;
 
 namespace RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePattern.Sample
@@ -12,8 +13,6 @@ namespace RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePatter
         {
             int maxCount = Blackboard.GetValue<int>("MaxCount");
 
-            Debug.Log("Use value" + maxCount);
-            
             Node root = new CountUpNode(maxCount);
             return root;
         }

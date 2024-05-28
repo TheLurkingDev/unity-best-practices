@@ -1,23 +1,22 @@
 using System.Collections.Generic;
 using RMC.Core.DesignPatterns.BehavioralPatterns.BehaviorTreePattern;
 
-
 namespace RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePattern.Sample
 {
-    public class SelectorBehaviorTree : BehaviorTree
+    public class RepeaterBehaviorTree : BehaviorTree
     {
         /// <summary>
-        /// Demo: See <see cref="Selector_AkaOr_Node"/> for expected behavior
+        /// Demo: See <see cref="RepeaterNode"/> for expected behavior
         /// </summary>
         protected override Node CreateRootNode()
         {
-            Node root = 
-                new Selector_AkaOr_Node(new List<Node>
+            Node root =
+                new RepeaterNode(new List<Node>()
                 {
                     new CountUpNode(3),
-                    new CountUpNode(3),
-                });
+                    new LogNode("Hello World")
 
+                }, 3);
             return root;
         }
     }

@@ -167,6 +167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 125199948}
+  - component: {fileID: 125199949}
   m_Layer: 0
   m_Name: PlayerBehaviorTreeDemo
   m_TagString: Untagged
@@ -189,6 +190,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &125199949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125199947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15e1eb2612286e94ab2121a38a6a871b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _common: {fileID: 1470180046}
+  _demoData:
+    Title: Play Scene
+    Instructions: See Unity Console Window
 --- !u!1001 &241948546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -712,6 +729,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1455008658}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1470180046 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 961125908916453551, guid: 984c41f17cb3f2a41bdd454378f46f00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1135745602}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af0eebfc01e473848a7529138b55c79e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1613973844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -927,7 +956,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1135745602}
+  - {fileID: 125199948}
+  - {fileID: 1613973844}
   - {fileID: 46554995}
   - {fileID: 2026229976}
-  - {fileID: 1613973844}
-  - {fileID: 125199948}

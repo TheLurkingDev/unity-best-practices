@@ -1,3 +1,4 @@
+using RMC.Core.DesignPatterns.BehavioralPatterns.BehaviorTreePattern;
 using UnityEngine;
 
 namespace RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePattern.Sample

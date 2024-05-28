@@ -1,5 +1,5 @@
 
-using RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePattern;
+using RMC.Core.DesignPatterns.BehavioralPatterns.BehaviorTreePattern;
 
 namespace RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePattern.Sample
 {

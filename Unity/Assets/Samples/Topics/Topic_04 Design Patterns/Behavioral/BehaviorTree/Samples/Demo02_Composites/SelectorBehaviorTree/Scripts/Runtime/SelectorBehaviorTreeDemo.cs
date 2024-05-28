@@ -7,21 +7,21 @@ namespace RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePatter
 	{
 		//[Header("Demo")]
 
-		private SelectorBehaviorTree _selectorBehaviorTree;
+		private SelectorBehaviorTree _behaviorTree;
 		
 		protected override void Start()
 		{
 			// Must call base
 			base.Start();
 			
-			_selectorBehaviorTree = new SelectorBehaviorTree();
-			_selectorBehaviorTree.Initialize();
+			_behaviorTree = new SelectorBehaviorTree();
+			_behaviorTree.Initialize();
 
 		}
 
 		private void Update()
 		{
-			_selectorBehaviorTree.OnTick(Time.deltaTime);
+			_behaviorTree.OnTick(Time.deltaTime);
 		}
 	}
 }

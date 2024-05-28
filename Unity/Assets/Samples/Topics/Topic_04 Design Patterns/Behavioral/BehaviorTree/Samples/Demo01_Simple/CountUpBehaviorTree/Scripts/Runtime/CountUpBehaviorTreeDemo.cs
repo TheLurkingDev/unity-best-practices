@@ -6,21 +6,21 @@ namespace RMC.BestPractices.DesignPatterns.BehavioralPatterns.BehaviorTreePatter
 	public class CountUpBehaviorTreeDemo : BaseDemo
 	{
 		//[Header("Demo")]
-		private CountUpBehaviorTree _countUpBehaviorTree;
+		private CountUpBehaviorTree _behaviorTree;
 		
 		protected override void Start()
 		{
 			// Must call base
 			base.Start();
 			
-			_countUpBehaviorTree = new CountUpBehaviorTree();
-			_countUpBehaviorTree.Initialize();
+			_behaviorTree = new CountUpBehaviorTree();
+			_behaviorTree.Initialize();
 
 		}
 
 		private void Update()
 		{
-			_countUpBehaviorTree.OnTick(Time.deltaTime);
+			_behaviorTree.OnTick(Time.deltaTime);
 		}
 	}
 }
