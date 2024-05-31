@@ -5,7 +5,7 @@ namespace RMC.BestPractices.DesignPatterns.StructuralPatterns.Strategy
 {
 	/// <summary>
 	/// Define a family of algorithms, encapsulate each one, and make them interchangeable.
-	/// Strategy lets the algorithm vary independently from clients that use it.
+	/// Strategy lets the algorithm vary independently of clients that use it.
 	/// See <a href="https://www.dofactory.com/net/strategy-design-pattern">docs</a>.
 	/// </summary>
 	public class StrategyPattern : BaseDemo
