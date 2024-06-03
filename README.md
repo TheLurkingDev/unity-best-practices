@@ -1,7 +1,7 @@
 
 # Unity Best Practices
 
-<img src="https://github.com/SamuelAsherRivello/unity-best-practices/blob/main/Unity/Assets/UnityBestPractices/Shared/Documentation/Images/Screenshot_v1.png?raw=true" width="500" />
+<img src="https://github.com/SamuelAsherRivello/unity-project-template/raw/master/Unity/Assets/Documentation/ReadMe/Art/Sprites/ProjectIcon.png" width="400" />
 
 **Details**
 
