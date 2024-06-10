@@ -5,7 +5,7 @@
 
 **Details**
 
-Here is a complete overview of **Design Patterns** and related topics for Unity. 
+Here is a complete overview of **Best Practices** and related topics for Unity. 
 
 The repo is complete with code samples.
 
