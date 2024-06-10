@@ -11,6 +11,13 @@ The repo is complete with code samples.
 
 Enjoy!
 
+**Related Repos**
+
+| Name                  | Description                            | Educational Use | Production Use | Link |
+|-----------------------|----------------------------------------|-----------------| ---------------| -----|
+| Unity Best Practices    | Repo with best practices for Unity. <BR>It covers project structure and code standards.  | ✔️  | ❌      | (See below) |
+| Unity Project Template  | Template showcasing best practices and <BR> coding standards for Unity projects.          | ❌  | ✔️       | [link](https://github.com/SamuelAsherRivello/unity-project-template/) |
+
 ## Table of Contents
 
 1. [Design Principles](#design-principles)
