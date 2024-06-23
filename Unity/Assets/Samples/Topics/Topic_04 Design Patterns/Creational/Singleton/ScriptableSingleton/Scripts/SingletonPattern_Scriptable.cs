@@ -1,7 +1,6 @@
 ﻿using RMC.BestPractices.Shared;
-using UnityEngine;
 
-namespace RMC.BestPractices.DesignPatterns.CreationalPatterns.SingletonPattern.ScriptableSingleton
+namespace RMC.BestPractices.DesignPatterns.CreationalPatterns.SingletonPattern.ScriptableSingletons
 {
 	/// <summary>
 	/// Ensure a class has only one instance and provide a global point of access to it.
